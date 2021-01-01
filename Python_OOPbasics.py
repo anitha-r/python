@@ -3,7 +3,7 @@
 
 # Different ways of slicing lists
 
-# In[5]:
+# In[83]:
 
 
 List1 = [12,14,23,67,90,7]
@@ -26,7 +26,7 @@ print(List1[-1])
 type(List1[0:1])
 
 
-# In[47]:
+# In[51]:
 
 
 #print every element in the list
@@ -39,12 +39,34 @@ print(List1[2::-2])
 #a negative step means list is traversed in the reverse direction
 print(List1[1:7:2])
 print(List1[:-9:-2])
+#print empty list when there is nothing to traverse
+print(List1[:5:-3])
 #returns an object of type list
 type(List1[2::-2])
 
 
-# In[ ]:
+# In[54]:
 
 
+#modify the list at certain indexes
+print(List1[::])
+List1[2:4] = [999,304]
+print(List1[::])
 
+
+# In[57]:
+
+
+#modify the list - set the first elements to empty
+print(List1[::])
+List1[:2]=[]
+print(List1[::])
+
+
+# In[84]:
+
+
+#modify the list to create a new list
+List2 = List1[:3] + List1[-5:-2]
+print(List2[::])
 
